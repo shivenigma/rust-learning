@@ -1,3 +1,3 @@
-pub fn another_function() {
-    println!("Another hello world");
+pub fn another_function(name: String) {
+    println!("Hello {}", name);
 }
