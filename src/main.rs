@@ -1,4 +1,4 @@
-pub mod guess;
+pub mod functions;
 fn main() {
-    guess::start();
+    functions::another_function();
 }
