@@ -1,4 +1,4 @@
-pub mod loops;
+pub mod temprature;
 fn main() {
-    loops::start();
+    temprature::start();
 }
