@@ -1,4 +1,4 @@
-pub mod functions;
+pub mod loops;
 fn main() {
-    functions::ask_name_and_wish();
+    loops::start();
 }
