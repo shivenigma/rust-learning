@@ -1,4 +1,4 @@
-pub mod temprature;
+pub mod fibonacci;
 fn main() {
-    temprature::start();
+    fibonacci::start(60);
 }
