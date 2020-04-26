@@ -1,4 +1,6 @@
-pub mod fibonacci;
+use std::io;
 fn main() {
-    fibonacci::start(60);
+    let mut str = String::new();
+    let str1 = str;
+    io::stdin().read_line(&mut str);
 }
