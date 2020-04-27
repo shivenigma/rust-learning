@@ -1,6 +1,8 @@
-use std::io;
 fn main() {
-    let mut str = String::new();
-    let str1 = str;
-    io::stdin().read_line(&mut str);
+    let str = String::from("Vignesh");
+    let num = calculate_len(str);
+    println!("Str {}, length is {}", str, num);
+}
+fn calculate_len(str: String) -> usize {
+    str.len()
 }
