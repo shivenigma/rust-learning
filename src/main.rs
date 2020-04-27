@@ -1,8 +1,11 @@
 fn main() {
     let mut str = String::from("Vignesh");
+    {
+        let str2 = &mut str;
+        println!("String in separate scope {}", str2);
+    }
     let str1 = &mut str;
-    let str2 = &mut str;
-    println!("String {} {}", str1, str2);
+    println!("String in main scope{}", str1);
     let num = calculate_len(&mut str);
     println!("Str {}, length is {}", str, num);
 }
