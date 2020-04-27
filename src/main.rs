@@ -4,5 +4,6 @@ fn main() {
     println!("Str {}, length is {}", str, num);
 }
 fn calculate_len(str: &String) -> usize {
+    str.insert(3, 'v');
     str.len()
 }
