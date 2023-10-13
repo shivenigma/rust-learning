@@ -1,4 +1,7 @@
+mod guess;
+use crate::guess::guess as gus;
 fn main() {
+    gus::start();
     // Difference between different print macros
 
     print!("I just print this {}", "string without any new lines");
