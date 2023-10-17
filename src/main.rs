@@ -21,4 +21,11 @@ fn main() {
 
     eprintln!("This is an {}", "error with new line");
     eprintln!(" Much easier to read");
+
+    let mut v: Vec<i32> = Vec::new();
+    v.push(32);
+    for i in &v {
+        println!("{i}");
+    }
+    let v1 = vec!["test", 1];
 }
