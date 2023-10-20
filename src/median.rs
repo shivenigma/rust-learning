@@ -1,7 +1,6 @@
 pub mod median {
     use std::collections::HashMap;
     use std::io;
-    use std::iter::IntoIterator;
     use std::result::Result::*;
     use std::string::String;
     use std::vec::Vec;
@@ -41,8 +40,15 @@ pub mod median {
             vec.sort();
             let median = vec[vec.len()/2];
             println!("The median is: {}", median);
-
-            hash.into_iter()
+            let mut max_key: i32 = 0;
+            let mut max_val: i32 = 0;
+            for (key, val) in hash.iter() {
+                if val > &max_val {
+                    max_key = *key;
+                    max_val = *val;
+                }
+            }
+            println!("The number {} has occured {} times", max_key, max_val);
         }
     }
 }
