@@ -1,5 +1,5 @@
-mod median;
-use crate::median::median as med;
+mod pig_latin;
+use crate::pig_latin::pig_latin as latin;
 fn main() {
-    med::start();
+    latin::start();
 }
